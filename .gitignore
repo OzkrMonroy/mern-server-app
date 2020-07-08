@@ -3,5 +3,6 @@ package-lock.json
 notes.md
 crearUsuarios.md
 autenticacion.md
+normalizarAcentos.md
 JWT.md
 variables.env
