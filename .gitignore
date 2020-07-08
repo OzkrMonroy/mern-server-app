@@ -1,4 +1,7 @@
 node_modules
 package-lock.json
 notes.md
+crearUsuarios.md
+autenticacion.md
+JWT.md
 variables.env
