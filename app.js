@@ -6,7 +6,7 @@ const app = express();
 connectToDB();
 app.use(cors());
 
-const PORT = process.env.PORT || 4000;
+const port = process.env.port || 4000;
 
 app.use(express.json({ extended: true }));
 
@@ -15,6 +15,6 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/projects', require('./routes/projects'));
 app.use('/api/tasks', require('./routes/tasks'));
 
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo desde el puerto ${PORT}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Servidor corriendo desde el puerto ${port}`);
 });
